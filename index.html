@@ -11,6 +11,7 @@
     <!-- Social Media Buttons Styles -->
     <style>
         .fa {
+            margin: 5px;
             padding: 10px;
             font-size: 30px;
             width: 50px;
@@ -81,6 +82,13 @@
         }   
         .clickable:hover {
             cursor: pointer;
+        }
+        .vertical-center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
         }
     </style>
     <!-- End Other Style Stuff -->
@@ -157,13 +165,18 @@
                     </div>
                     <!-- End Objective -->
 
-                    <div class="row justify-content-center margin">
+                    <!-- <div class="row justify-content-center margin">
                         <button onclick="location.href='JamesBarnesResume.pdf';" class="resume-button" style="width: 150px; text-align: center;" role="button">Resume</button>
-                    </div>
+                    </div> -->
                     <!-- Links-->
                     <div class="row justify-content-center">
-                        <a href="https://www.linkedin.com/in/james-barnes-112878156/" class="fa fa-linkedin"></a>
-                        <a href="https://github.com/freddytums" class="fa fa-github"></a>   
+                        <div class="col-auto">
+                            <button onclick="location.href='JamesBarnesResume.pdf';" class="resume-button" style="width: 150px; text-align: center;" role="button">Resume</button>
+                        </div> 
+                            <div class="col-auto">
+                            <a href="https://www.linkedin.com/in/james-barnes-112878156/" class="fa fa-linkedin"></a>
+                            <a href="https://github.com/freddytums" class="fa fa-github"></a>  
+                        </div>  
                     </div>
                     <!-- End Links -->
                 </div>
