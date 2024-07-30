@@ -79,6 +79,9 @@
         html, body, .container {
             height: 100%;
         }   
+        .clickable:hover {
+            cursor: pointer;
+        }
     </style>
     <!-- End Other Style Stuff -->
 
@@ -157,7 +160,6 @@
                     <div class="row justify-content-center margin">
                         <button onclick="location.href='JamesBarnesResume.pdf';" class="resume-button" style="width: 150px; text-align: center;" role="button">Resume</button>
                     </div>
-
                     <!-- Links-->
                     <div class="row justify-content-center">
                         <a href="https://www.linkedin.com/in/james-barnes-112878156/" class="fa fa-linkedin"></a>
@@ -173,7 +175,7 @@
             <div class="row justify-content-center">
                 <!-- RX7 Card -->
                 <div class="col-auto float_in">
-                    <div class="card zoom" style="width: 18rem;">
+                    <div class="card zoom clickable" onclick="location.href='html/rx7.html';" style="width: 18rem;">
                         <img src="img/rx72.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <a href="html/rx7.html" class="btn btn-primary">1983 Mazda RX-7</a>
@@ -184,7 +186,7 @@
                 <!-- End RX7 Card -->
                 <!-- FRC 2024 Card -->
                 <div class="col-auto float_in" style="animation-delay: 0.15s;">
-                    <div class="card zoom" style="width: 18rem;">
+                    <div class="card zoom clickable" onclick="location.href='html/frc2024.html';" style="width: 18rem;">
                         <img src="img/3310-robot.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <a href="html/frc2024.html" class="btn btn-primary">First Robotics 2024</a>
@@ -195,7 +197,7 @@
                 <!-- End FRC 2024 Card -->
                 <!-- Sun Tracking Solar Panel -->
                 <div class="col-auto float_in" style="animation-delay: 0.30s;">
-                    <div class="card zoom" style="width: 18rem;">
+                    <div class="card zoom clickable" onclick="location.href='html/sisolar.html';" style="width: 18rem;">
                         <img src="img/sisolar.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <a href="html/sisolar.html" class="btn btn-primary">Si-Solar</a>
