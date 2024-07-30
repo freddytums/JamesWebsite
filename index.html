@@ -19,9 +19,9 @@
             text-decoration: none;
         }
 
-        .fa:hover {
+        /* .fa:hover {
             opacity: 0.7;   
-        }
+        } */
 
         .fa-linkedin {
             background: #3B5998;
@@ -30,6 +30,11 @@
 
         .fa-github {
             background: #6d06866c;
+            color: white; 
+        }
+
+        .fa-google {
+            background: #b92c2c;
             color: white; 
         }
 
@@ -75,10 +80,12 @@
     <!-- Other Style Stuff -->
     <style>
         .margin {
-            margin: 20px;
+            padding: 10px;
+            /* margin: 20px; */
         }
         html, body, .container {
-            height: 100%;
+            height: auto;
+            min-height: 100%;
         }   
         .clickable:hover {
             cursor: pointer;
@@ -115,8 +122,24 @@
             transition-duration: .3s;
         }
 
-        .zoom:hover {
+        .whiteshadow:hover {
             box-shadow: rgba(235, 234, 236, 0.603) 0 1px 30px;
+        }
+
+        .purpleshadow:hover {
+            box-shadow: rgba(112, 21, 202, 0.603) 0 1px 30px;
+        }
+
+        .blueshadow:hover {
+            box-shadow: rgba(50, 79, 240, 0.685) 0 1px 30px;
+        }
+
+        .redshadow:hover {
+            box-shadow: rgba(207, 11, 27, 0.603) 0 1px 30px;
+        }
+
+        .zoom:hover {
+            
             transform: scale(1.1);
         }
     </style>
@@ -132,8 +155,25 @@
     </style>
     <!-- End Background Gradient -->
 
+    <nav class="navbar navbar-expand-lg" style="background-color: #ebebeb;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../JamesBarnesResume.pdf">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <body id="grad1">
-        <div class="container text-center bg-dark text-light" >
+        <div class="container text-center bg-dark text-light">
             <div class="row justify-content-center">
                 <div class="col">
                     <h1 class="display-1">James A. Barnes</h1>
@@ -145,7 +185,7 @@
 
                 <!-- Picture -->
                 <div class="col-auto margin" >
-                    <img src="img/profile3.png" class="rounded img-fluid" alt="James Barnes" style="max-width: 300px;">
+                    <img src="img/profile/profile3.png" class="rounded img-fluid" alt="James Barnes" style="max-width: 300px;">
                 </div>
                 <!-- End Picture -->
 
@@ -171,11 +211,12 @@
                     <!-- Links-->
                     <div class="row justify-content-center">
                         <div class="col-auto">
-                            <button onclick="location.href='JamesBarnesResume.pdf';" class="resume-button" style="width: 150px; text-align: center;" role="button">Resume</button>
+                            <button onclick="location.href='JamesBarnesResume.pdf';" class="resume-button zoom" style="width: 150px; text-align: center;" role="button">Resume</button>
                         </div> 
                             <div class="col-auto">
-                            <a href="https://www.linkedin.com/in/james-barnes-112878156/" class="fa fa-linkedin"></a>
-                            <a href="https://github.com/freddytums" class="fa fa-github"></a>  
+                            <a href="https://www.linkedin.com/in/james-barnes-112878156/" class="fa fa-linkedin zoom"></a>
+                            <a href="https://github.com/freddytums" class="fa fa-github zoom"></a>
+                            <a href="mailto:jamesabarnes.work@gmail.com" class="fa fa-google zoom"></a>  
                         </div>  
                     </div>
                     <!-- End Links -->
@@ -187,9 +228,9 @@
             <!-- Cards Row -->
             <div class="row justify-content-center">
                 <!-- RX7 Card -->
-                <div class="col-auto float_in">
-                    <div class="card zoom clickable" onclick="location.href='html/rx7.html';" style="width: 18rem;">
-                        <img src="img/rx72.png" class="card-img-top" alt="...">
+                <div class="col-auto float_in margin">
+                    <div class="card zoom clickable whiteshadow" onclick="location.href='html/rx7.html';" style="width: 18rem;">
+                        <img src="img/rx7/rx7_2.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <a href="html/rx7.html" class="btn btn-primary">1983 Mazda RX-7</a>
                             <p class="card-text">'88 13B Engine Swap - Chassis modifications and retrofit</p>
@@ -198,9 +239,9 @@
                 </div>
                 <!-- End RX7 Card -->
                 <!-- FRC 2024 Card -->
-                <div class="col-auto float_in" style="animation-delay: 0.15s;">
-                    <div class="card zoom clickable" onclick="location.href='html/frc2024.html';" style="width: 18rem;">
-                        <img src="img/3310-robot.png" class="card-img-top" alt="...">
+                <div class="col-auto float_in margin" style="animation-delay: 0.15s;">
+                    <div class="card zoom clickable whiteshadow" onclick="location.href='html/frc2024.html';" style="width: 18rem;">
+                        <img src="img/frc/3310-robot.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <a href="html/frc2024.html" class="btn btn-primary">First Robotics 2024</a>
                             <p class="card-text">3310 Blackhawk Robotics Software Mentor</p>
@@ -209,9 +250,9 @@
                 </div>
                 <!-- End FRC 2024 Card -->
                 <!-- Sun Tracking Solar Panel -->
-                <div class="col-auto float_in" style="animation-delay: 0.30s;">
-                    <div class="card zoom clickable" onclick="location.href='html/sisolar.html';" style="width: 18rem;">
-                        <img src="img/sisolar.png" class="card-img-top" alt="...">
+                <div class="col-auto float_in margin" style="animation-delay: 0.30s;">
+                    <div class="card zoom clickable whiteshadow" onclick="location.href='html/sisolar.html';" style="width: 18rem;">
+                        <img src="img/sisolar/sisolar.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <a href="html/sisolar.html" class="btn btn-primary">Si-Solar</a>
                             <p class="card-text">Sun Tracking Solar Panel - UTDallas Senior Design Project</p>
@@ -221,7 +262,14 @@
                 <!-- End Sun Tracking Solar Panel Card-->
             </div>
             <!-- End Cards Row -->
+
+            <footer>
+                <p class="margin" style="text-align: left;">&copy; James Barnes 2024</p>
+            </footer>
+
         </div>
+
+        
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
