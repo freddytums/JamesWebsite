@@ -28,13 +28,14 @@
         }
 
         .fa-github {
-            background: #a40bca;
+            background: #6d06866c;
             color: white; 
         }
 
     </style>
     <!-- End Social Media Button Styles -->
 
+    <!-- Resume Button -->
     <style>
         .resume-button {
             background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
@@ -44,7 +45,7 @@
             color: #FFFFFF;
             cursor: pointer;
             flex-shrink: 0;
-            font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+            /* font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif; */
             font-size: 16px;
             font-weight: 500;
             height: 4rem;
@@ -68,12 +69,21 @@
             }
         }
     </style>
+    <!-- End Resume Button -->
 
+    <!-- Other Style Stuff -->
     <style>
         .margin {
             margin: 20px;
         }
+        html, body, .container {
+            height: 100%;
+        }   
+    </style>
+    <!-- End Other Style Stuff -->
 
+    <!-- Card animation -->
+    <style>
         .float_in {
             animation-fill-mode: backwards;
             position: relative;
@@ -86,20 +96,45 @@
             100%   {top:0px; right: 0px; opacity: 1;}
         }
     </style>
+    <!-- End Card Animation -->
 
-    <body class="bg-dark text-white">
-        <div class="container text-center">
+    <!-- Zoom On Hover -->
+    <style>
+        .zoom {
+            transition-duration: .3s;
+        }
+
+        .zoom:hover {
+            box-shadow: rgba(235, 234, 236, 0.603) 0 1px 30px;
+            transform: scale(1.1);
+        }
+    </style>
+    <!-- End Zoom On Hover -->
+
+    <!-- Background Gradient -->
+    <style> 
+        #grad1 {
+            height: 100%;
+            background-color: rgb(43, 43, 43); /* For browsers that do not support gradients */
+            background-image: linear-gradient(to bottom right, rgb(110, 64, 170), rgba(3, 14, 175, 0.479));
+        }
+    </style>
+    <!-- End Background Gradient -->
+
+    <body id="grad1">
+        <div class="container text-center bg-dark text-light" >
             <div class="row justify-content-center">
                 <div class="col">
-                    <h1 class="display-1">James Barnes</h1>
+                    <h1 class="display-1">James A. Barnes</h1>
+                    <h2 class="display-6">Electrical Engineer</h2>
                 </div>
             </div>
             <!-- Profile Header -->
-            <div class="row justify-content-center">
+            <div class="row justify-content-center margin">
 
                 <!-- Picture -->
                 <div class="col-auto margin" >
-                    <img src="img/profile.png" class="rounded img-fluid" alt="James Barnes" style="max-width: 300px;">
+                    <img src="img/profile3.png" class="rounded img-fluid" alt="James Barnes" style="max-width: 300px;">
                 </div>
                 <!-- End Picture -->
 
@@ -120,29 +155,25 @@
                     <!-- End Objective -->
 
                     <div class="row justify-content-center margin">
-                        <button class="resume-button" onclick="window.open('http://google.com','_blank')" style="width: 150px;" role="button">Resume</button>
+                        <button onclick="location.href='JamesBarnesResume.pdf';" class="resume-button" style="width: 150px; text-align: center;" role="button">Resume</button>
                     </div>
 
                     <!-- Links-->
                     <div class="row justify-content-center">
-                        <a href="html/rx7.html" class="fa fa-linkedin"></a>
-                        <a href="html/rx7.html" class="fa fa-github"></a>
-                        
+                        <a href="https://www.linkedin.com/in/james-barnes-112878156/" class="fa fa-linkedin"></a>
+                        <a href="https://github.com/freddytums" class="fa fa-github"></a>   
                     </div>
                     <!-- End Links -->
                 </div>
                 <!-- End Profile -->
-
             </div>
             <!-- End Profile Header -->
-
-            
 
             <!-- Cards Row -->
             <div class="row justify-content-center">
                 <!-- RX7 Card -->
                 <div class="col-auto float_in">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card zoom" style="width: 18rem;">
                         <img src="img/rx72.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <a href="html/rx7.html" class="btn btn-primary">1983 Mazda RX-7</a>
@@ -153,7 +184,7 @@
                 <!-- End RX7 Card -->
                 <!-- FRC 2024 Card -->
                 <div class="col-auto float_in" style="animation-delay: 0.15s;">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card zoom" style="width: 18rem;">
                         <img src="img/3310-robot.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <a href="html/frc2024.html" class="btn btn-primary">First Robotics 2024</a>
@@ -164,7 +195,7 @@
                 <!-- End FRC 2024 Card -->
                 <!-- Sun Tracking Solar Panel -->
                 <div class="col-auto float_in" style="animation-delay: 0.30s;">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card zoom" style="width: 18rem;">
                         <img src="img/sisolar.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <a href="html/sisolar.html" class="btn btn-primary">Si-Solar</a>
