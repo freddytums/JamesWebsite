@@ -195,26 +195,26 @@
             <h2 class="display-6" style="text-align: left;">Sun Tracking Solar Panel</h2>
 
             <div class="row justify-content-center margin">
-                <div class="col">
-                    <div id="carouselExample" class="carousel slide">
+                <div class="col-auto" >
+                    <div id="carouselExample" class="carousel slide" style="max-width: 400px;">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
+                                <img src="../img/sisolar/assembly-pcb.png" class="rounded img-fluid" alt="System">
+                            </div>
+                            <div class="carousel-item">
                                 <img src="../img/sisolar/cad-exploded.png" class="rounded img-fluid" alt="Exploded View"">
                             </div>
                             <div class="carousel-item">
-                                <img src="../img/sisolar/sisolar.png" class="rounded img-fluid" alt="System">
+                                <img src="../img/sisolar/assembly-az-bearing.JPG" class="rounded img-fluid" alt="System">
                             </div>
                             <div class="carousel-item">
-                                <img src="../img/sisolar/assembly-pcb.png" class="rounded img-fluid" alt="System">
+                                <img src="../img/sisolar/sisolar.png" class="rounded img-fluid" alt="System">
                             </div>
                             <div class="carousel-item">
                                 <img src="../img/sisolar/cad-lds.JPG" class="rounded img-fluid" alt="System">
                             </div>
                             <div class="carousel-item">
                                 <img src="../img/sisolar/assembly-lds.png" class="rounded img-fluid" alt="System">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../img/sisolar/assembly-az-bearing.JPG" class="rounded img-fluid" alt="System">
                             </div>
                             <div class="carousel-item">
                                 <img src="../img/sisolar/assembly-lds-2.JPG" class="rounded img-fluid" alt="System">
@@ -230,32 +230,34 @@
                         </button>
                     </div>
                 </div>
-                <div class="col">
-                    <p style="text-align: left;">
-                        This project, SiSolar, was completed as my team's UTDallas Senior Design Project from 2019-2020.
-                    </p>
+                <div class="col-auto" >
+                    <div style="max-width: 600px;">
+                        <p style="text-align: left;">
+                            This project, SiSolar, was completed as my team's UTDallas Senior Design Project from 2019-2020.
+                        </p>
 
-                    <p style="text-align: left;">
-                        Our mission was to develop a solar energy harnessing system which maintains maximum efficiency by tracking the sun throughout the day. 
-                        Additional design requirements were to minimize the system's power consumption as well as avoiding the use of internet or external input.  
-                    </p>
+                        <p style="text-align: left;">
+                            Our mission was to develop a solar energy harnessing system which maintains maximum efficiency by tracking the sun throughout the day. 
+                            Additional design requirements were to minimize the system's power consumption as well as avoiding the use of internet or external input.  
+                        </p>
 
-                    <p style="text-align: left;">
-                        The project is comprised of two assemblies: the Sun Angle Detector Assembly, and the Solar Panel Orienter Assembly.
-                    </p>
+                        <p style="text-align: left;">
+                            The project is comprised of two assemblies: the Sun Angle Detector Assembly, and the Solar Panel Orienter Assembly.
+                        </p>
 
-                    <p style="text-align: left;">
-                        The Sun Angle Detector Assembly is a light sensing circuit board that is illuminated with a pinhole projection 
-                        of the sky. A micro-controller takes the circuit board's output, and triangulates the position of the sun.
-                    </p>
+                        <p style="text-align: left;">
+                            The Sun Angle Detector Assembly is a light sensing circuit board that is illuminated with a pinhole projection 
+                            of the sky. A micro-controller takes the circuit board's output, and triangulates the position of the sun.
+                        </p>
 
-                    <p style="text-align: left;">
-                        The Solar Panel Orienter Assembly is a two axis motor that pitches and yaws the affixed solar panel.
-                    </p>
+                        <p style="text-align: left;">
+                            The Solar Panel Orienter Assembly is a two axis motor that pitches and yaws the affixed solar panel.
+                        </p>
 
-                    <p style="text-align: left;">
-                        Below you can find more in depth information about this project!
-                    </p>
+                        <p style="text-align: left;">
+                            Below you can find more in depth information about this project!
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -274,7 +276,7 @@
                         <div class="accordion-item float_left">
                             <h2 class="accordion-header">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapseOne">
-                                    Concept and Research Presentation
+                                    Concept and Research Poster
                                 </button>
                             </h2>
                             <div id="collapse1" class="accordion-collapse collapse">
@@ -287,13 +289,53 @@
                         <div class="accordion-item float_left" style="animation-delay: 0.15s;">
                             <h2 class="accordion-header">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapseOne">
-                                    System Overview Diagrams
+                                    System Overview Diagram
                                 </button>
                             </h2>
                             <div id="collapse2" class="accordion-collapse collapse">
                                 <div class="accordion-body" style="background-color: rgb(57, 58, 59);">
-                                    <img src="../img/sisolar/system-diagram.JPG" class="rounded img-fluid" alt="James Barnes" style="max-width: 60%;">
-                                    <img src="../img/sisolar/pinhole-diagram.JPG" class="rounded img-fluid" alt="James Barnes" style="max-width: 60%;">
+                                    
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <div style="max-width: 600px;">
+                                                <img src="../img/sisolar/system-diagram.JPG" class="rounded img-fluid" alt="System Diagram" >
+                                            </div>
+                                        </div>
+                                        <div class="col-auto text-light">
+                                            <div style="max-width: 600px">
+                                                <p style="text-align: left;">
+                                                    The project is comprised of two assemblies: the Sun Angle Detector Assembly, and the Solar Panel Orienter Assembly.
+                                                </p>
+                                                <p style="text-align: left;">
+                                                    The Sun Angle Detector is PCB covered by a shell. The shell includes a pinhole that introduces a projection of the sun onto 
+                                                    the PCB which is populated with grid of LEDs. When each of the LEDs is illuminated by the projection of the sun, they generate 
+                                                    voltages on the grid which correspond to a coordinate that the master microcontroller is able to determine.
+                                                </p>
+                                                <p style="text-align: left;">
+                                                    The Solar Panel Orienter is relayed the current position from the Sun Angle Detectors controller. The orienters controller then pitches and yaws
+                                                    the Solar Panel to face directly at the sun.
+                                                </p>
+                                                <p style="text-align: left;">
+                                                    This concept is expandable such that an array of Solar Panel Orienters could be controlled by a single Sun Angle Detector. The concept is also modular,
+                                                    and easily allows for variations of the Solar Panel Orienter mechanism.
+                                                </p>
+                                                <p style="text-align: left;">
+                                                    This concept also functions without the use of the internet or any external data source, providing the capability to be used off-grid. 
+                                                </p>
+                                                <!-- <p style="text-align: left;">
+                                                    The Sun Angle Detector utilizes the photovoltaic effect, wherein light absorbed by an LED will generate a voltage and an electric current.
+                                                    320 LEDs are arranged into a pattern of radial lines and concentric circles onto a PCB. The PCB is designed such that when a specific area 
+                                                    of the PCB is illuminated, a voltage is generated on a trace running radially, and another along the concentric circle. Each trace is bussed
+                                                    to a microcontroller that determines the point illuminated on the board.
+                                                </p>
+                                                <p style="text-align: left;">
+                                                    To shield the LEDs from ambient light, a shell covers the PCB. A pinhole is added at the very top of the shell, which introduces a projection of the sun
+                                                    onto the PCB. The detection circuit is then capable of determining which area of the board is being illuminated by the projection of the sun, thus
+                                                    supplying the information required to triangulate the sun's position in the sky, relative to the detection circuit.
+                                                </p> -->
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -306,36 +348,163 @@
                             </h2>
                             <div id="collapse3" class="accordion-collapse collapse">
                                 <div class="accordion-body" style="background-color: rgb(57, 58, 59);">
-                                    <img src="../img/sisolar/system-diagram.JPG" class="rounded img-fluid" alt="James Barnes" style="max-width: 60%;">
-                                    <img src="../img/sisolar/pinhole-diagram.JPG" class="rounded img-fluid" alt="James Barnes" style="max-width: 60%;">
+                                    <div class="row margin">
+                                        <div class="col-auto text-light">
+                                            <div style="max-width: 600px;">
+                                                <p style="text-align: left;">
+                                                    The mechanism for orienting the solar panel consists of a few moving components. The Solar Panel is mounted to a folding frame which is
+                                                    controlled by a linear actuator that pitches the panel. The frame is mounted onto an azimuth bearing, and then driven by a motor 
+                                                    that rotates the entire frame.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto text-light">
+                                            <div style="max-width: 600px">                                            
+                                                <p style="text-align: left;">
+                                                    The mechanism is designed to hold position if power is removed. The linear actuator and the azimuth torqueing motor both were selected for having
+                                                    high gear ratios to enable the system to both withstand and overcome wind. The systemw is designed to operate on 12V. All electrical components are housed
+                                                    on top of the rotating layer, beneath the solar panel for at the least shade and then some minor protection from weather.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row margin justify-content-center">
+                                        <div class="col-auto">
+                                            <div style="max-width: 600px;">
+                                                <img src="../img/sisolar/cad-exploded.png" class="rounded img-fluid" alt="CAD Exploded View" >
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div style="max-width: 600px">
+                                                    <img src="../img/sisolar/cad-lds.JPG" class="rounded img-fluid" alt="CAD Assembly" >                                              
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+
+                                    <div class="row margin justify-content-center">
+                                        <div class="col-auto">
+                                            <div style="max-width: 600px;">
+                                                <img src="../img/sisolar/assembly-az-bearing.JPG" class="rounded img-fluid" alt="Azimuth Bearing" >
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div style="max-width: 600px">
+                                                <div>
+                                                    <img src="../img/sisolar/assembly-lds.png" class="rounded img-fluid" alt="Assembly" >   
+                                                </div>
+                                                <div style="padding-top: 20px;">    
+                                                    <img src="../img/sisolar/assembly-lds-2.JPG" class="rounded img-fluid" alt="Assembly 2" >                                        
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
 
                         <div class="accordion-item float_left" style="animation-delay: 0.45s;">
                             <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapseOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapseOne">
                                     Sun Angle Detector PCB 
                                 </button>
                             </h2>
-                            <div id="collapse3" class="accordion-collapse collapse">
+                            <div id="collapse4" class="accordion-collapse collapse">
                                 <div class="accordion-body" style="background-color: rgb(57, 58, 59);">
-                                    <img src="../img/sisolar/system-diagram.JPG" class="rounded img-fluid" alt="James Barnes" style="max-width: 60%;">
-                                    <img src="../img/sisolar/pinhole-diagram.JPG" class="rounded img-fluid" alt="James Barnes" style="max-width: 60%;">
+                                    
+                                    <div class="row margin">
+                                        <div class="col-auto text-light">
+                                            <div style="max-width: 600px;">
+                                                <p style="text-align: left;">
+                                                    Lessons learned Lessons learned Lessons learned Lessons learned Lessons learned Lessons learned Lessons learned Lessons learned 
+                                                    Lessons learned Lessons learned Lessons learned Lessons learned Lessons learned Lessons learned Lessons learned Lessons learned 
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto text-light">
+                                            <div style="max-width: 600px">                                            
+                                                <p style="text-align: left;">
+                                                    Lessons learned Lessons learned Lessons learned Lessons learned Lessons learned Lessons learned Lessons learned Lessons learned 
+                                                    Lessons learned Lessons learned Lessons learned Lessons learned Lessons learned Lessons learned Lessons learned Lessons learned 
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row margin justify-content-center">
+                                        <div class="col-auto">
+                                            <div style="max-width: 600px;">
+                                                <img src="../img/sisolar/LEDcircuit.png" class="rounded img-fluid" alt="CAD Exploded View" >
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div style="max-width: 600px">
+                                                    <img src="../img/sisolar/cad-pcb-example.png" class="rounded img-fluid" alt="CAD Assembly" >                                              
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+
+                                    <div class="row margin justify-content-center">
+                                        <div class="col-auto">
+                                            <div style="max-width: 600px;">
+                                                <img src="../img/sisolar/pinhole-diagram.JPG" class="rounded img-fluid" alt="Azimuth Bearing" >
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div style="max-width: 600px">
+                                                <div>
+                                                    <img src="../img/sisolar/assembly-pcb.png" class="rounded img-fluid" alt="Assembly" >   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
                                 </div>
                             </div>
                         </div>
 
                         <div class="accordion-item float_left" style="animation-delay: 0.60s;">
                             <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapseOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapseOne">
                                     Conclusion and Lessons Learned
                                 </button>
                             </h2>
-                            <div id="collapse3" class="accordion-collapse collapse">
+                            <div id="collapse5" class="accordion-collapse collapse">
                                 <div class="accordion-body" style="background-color: rgb(57, 58, 59);">
-                                    <img src="../img/sisolar/system-diagram.JPG" class="rounded img-fluid" alt="James Barnes" style="max-width: 60%;">
-                                    <img src="../img/sisolar/pinhole-diagram.JPG" class="rounded img-fluid" alt="James Barnes" style="max-width: 60%;">
+                            
+                                    <div class="row margin">
+                                        <div class="col-auto text-light">
+                                            <div style="max-width: 600px;">
+                                                <p style="text-align: left;">
+                                                    Lessons learned Lessons learned Lessons learned Lessons learned Lessons learned Lessons learned Lessons learned Lessons learned 
+                                                    Lessons learned Lessons learned Lessons learned Lessons learned Lessons learned Lessons learned Lessons learned Lessons learned 
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto text-light">
+                                            <div style="max-width: 600px">                                            
+                                                <p style="text-align: left;">
+                                                    Lessons learned Lessons learned Lessons learned Lessons learned Lessons learned Lessons learned Lessons learned Lessons learned 
+                                                    Lessons learned Lessons learned Lessons learned Lessons learned Lessons learned Lessons learned Lessons learned Lessons learned 
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row margin justify-content-center">
+                                        <div class="col-auto">
+                                            <div style="max-width: 100%;">
+                                                <img src="../img/sisolar/cad-panorama.JPG" class="rounded img-fluid" alt="CAD Exploded View" >
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
